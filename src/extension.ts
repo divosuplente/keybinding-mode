@@ -34,7 +34,7 @@ export function activate(context: ExtensionContext) {
 
   context.subscriptions.push(
     registerCommand("keybindingMode.toggle", () => {
-      executeCommand("setContext", "keybindingMode:disabled", true);
+      executeCommand("setContext", "keybindingMode:enabled", false);
       showInformationMessage("keybindingMode disabled");
     })
   );
